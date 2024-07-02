@@ -1,4 +1,4 @@
-import { serverLoader } from "./.route/serverLoader"
+import { serverLoader } from "./.route"
 
 export default serverLoader(() => {
   return { planet: "world" }

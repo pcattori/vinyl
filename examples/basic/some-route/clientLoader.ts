@@ -1,4 +1,4 @@
-import { clientLoader } from "./.route/clientLoader"
+import { clientLoader } from "./.route"
 
 export default clientLoader(async ({ serverLoader }) => {
   let stuff = await serverLoader()

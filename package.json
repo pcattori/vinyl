@@ -1,5 +1,8 @@
 {
   "private": true,
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
   "prettier": {
     "semi": false
   },

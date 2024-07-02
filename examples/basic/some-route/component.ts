@@ -1,5 +1,6 @@
-import { component } from "./.route/component"
+import { component } from "./.route"
 
 export default component(({ params, loaderData }) => {
-  return ""
+  console.log(params.id)
+  return `Hello, ${loaderData.planet}!`
 })
