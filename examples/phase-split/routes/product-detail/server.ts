@@ -1,7 +1,10 @@
-// @ts-nocheck
-import { server } from "./.types"
+import { server } from "./.route"
 
 export default server({
-  loader() {},
-  action() {},
+  loader() {
+    return { server: "loader" }
+  },
+  action() {
+    return { server: "action" }
+  },
 })

@@ -1,9 +1,10 @@
-// @ts-nocheck
 import { clientLoader } from "./.route"
 
 export default clientLoader(
-  (stuff, blah, blarg) => {
-    return { stuff, blah, blarg }
+  async ({ serverLoader }) => {
+    let stuff = await serverLoader()
+    let x = stuff.server
+    return { ...stuff, client: "loader" }
   },
   { hydrate: true },
 )

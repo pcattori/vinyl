@@ -1,4 +1,5 @@
-// @ts-nocheck
 import { clientAction } from "./.route"
 
-export default clientAction(() => {})
+export default clientAction(() => {
+  return { client: "action" }
+})
