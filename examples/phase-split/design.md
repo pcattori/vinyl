@@ -1,0 +1,3 @@
+- generates route module creators that happen to be typesafe
+- you _must_ use those route module creators; compile-time (+ lint) error otherwise
+  - statically determine properties of each route module
